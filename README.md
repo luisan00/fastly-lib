@@ -1,7 +1,10 @@
 # fastly-lib
-[![Build Status](https://travis-ci.org/luisan00/fastly-lib.svg?branch=master)](https://travis-ci.org/luisan00/fastly-lib)
+Dependencies-free client to interface with the API Fastly for Node.js.
 
-Dependencies-free client to interface with the API Fastly
+[![NPM](https://nodei.co/npm/fastly-lib.png)](https://nodei.co/npm/fastly-lib/)
+
+
+[![Build Status](https://travis-ci.org/luisan00/fastly-lib.svg?branch=master)](https://travis-ci.org/luisan00/fastly-lib)
 
 ### Requirements
 Node.js >= 6.x.x
