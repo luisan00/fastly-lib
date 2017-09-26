@@ -20,7 +20,8 @@ npm install fastly-lib --save
 ```
 ### Usage:
 
-Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">API Fastly</a>
+Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a>
+
 ```js
 // constructor
 const fastlyLib = require('fastly-lib');
