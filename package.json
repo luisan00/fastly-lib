@@ -17,7 +17,9 @@
     "client"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "tap": "^10.7.2"
+  },
   "author": "luisan00",
   "license": "MIT"
 }
