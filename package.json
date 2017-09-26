@@ -2,7 +2,7 @@
   "name": "fastly-lib",
   "version": "0.9.0",
   "description": "API fastly client",
-  "main": "main.js",
+  "main": "lib/fastlyJS.js",
   "scripts": {
     "test": "node ./test/index.js"
   },
@@ -12,7 +12,9 @@
   },
   "keywords": [
     "fastly",
-    "cache"
+    "api",
+    "cache",
+    "client"
   ],
   "devDependencies": {
     "tap": "~0.3.3"
