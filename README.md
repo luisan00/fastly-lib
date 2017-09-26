@@ -10,4 +10,4 @@ Or if you want to add it in your package.json, type:
 ```bash
 npm install fastly-js --save
 ```
-### Firstly I strongly recommend reading the documentation about the <a href="https://docs.fastly.com/api/">API Fastly</a>
+### Firstly and before to use the client, I strongly recommend reading the documentation about the <a href="https://docs.fastly.com/api/">API Fastly</a>
