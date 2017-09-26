@@ -18,7 +18,7 @@ Or if you want to add it in your package.json, type:
 ```bash
 npm install fastly-lib --save
 ```
-### Usage:
+### Usage
 
 Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a>
 
@@ -38,3 +38,7 @@ fastly.datacenters()
     console.log(err);
   })
 ```
+
+### License
+
+fastly-lib is licensed under the <a href="">MIT License</a> © 2017 luisan00
