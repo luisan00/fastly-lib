@@ -1,7 +1,7 @@
 const tap = require('tap');
 const fastlylib = require('../lib/fastlyJS.js') ;
 
-tap('fastly-lib', function(test) {
+tap.test('fastly-lib', function(test) {
 	var fastly = new fastlylib('fastly-api-key');
 
 	test.type(fastly, 'object', 'Returns an Object');
