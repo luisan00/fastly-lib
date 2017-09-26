@@ -23,8 +23,10 @@ npm install fastly-lib --save
 Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">API Fastly</a>
 ```js
 // constructor
-const fastly = require('fastly-lib');
-// get a list of Fastly datacenters
+const fastlyLib = require('fastly-lib');
+// create an instance.
+const fastly = new fastlyLib('your_api_key');
+// get a list of Fastly datacenters.
 fastly.datacenters()
   .then((res) => {
     // do something with the response.
