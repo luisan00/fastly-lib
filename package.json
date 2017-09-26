@@ -16,6 +16,7 @@
     "cache",
     "client"
   ],
+  "dependencies": {},
   "devDependencies": {},
   "author": "luisan00",
   "license": "MIT"
