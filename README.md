@@ -1,5 +1,5 @@
 # fastly-js
-Node.js client to interface with the API fastly
+Node.js client to interface with the API Fastly
 
 ### Installing
 The simplest method is to use npm in your source code folder
@@ -10,3 +10,4 @@ Or if you want to add it in your package.json, type:
 ```bash
 npm install fastly-js --save
 ```
+### Firstly I strongly recommend reading the documentation about the <a href="https://docs.fastly.com/api/">API Fastly</a>
