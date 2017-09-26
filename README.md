@@ -1,10 +1,9 @@
 # fastly-lib
 [![Build Status](https://travis-ci.org/luisan00/fastly-lib.svg?branch=master)](https://travis-ci.org/luisan00/fastly-lib)
-[![Coverage Status](https://coveralls.io/repos/github/luisan00/fastly-lib/badge.svg?branch=master)](https://coveralls.io/github/luisan00/fastly-lib?branch=master)
 
 Dependencies-free client to interface with the API Fastly
 
-## Requirements
+### Requirements
 Node.js >= 6.x.x
 
 ### Installing
@@ -16,4 +15,9 @@ Or if you want to add it in your package.json, type:
 ```bash
 npm install fastly-lib --save
 ```
-### Firstly and before to use the client, I strongly recommend reading the documentation about the <a target="_blank"  href="https://docs.fastly.com/api/">API Fastly</a>
+### Usage:
+
+Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">API Fastly</a>
+```js
+const fastly = require('fastly-lib');
+```
