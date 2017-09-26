@@ -14,6 +14,9 @@
     "fastly",
     "cache"
   ],
+  "devDependencies": {
+    "tap": "~0.3.3"
+  },
   "author": "luisan00",
   "license": "MIT"
 }
