@@ -1,4 +1,4 @@
-const tap = require('tap').test;
+const tap = require('tap');
 const fastlylib = require('../lib/fastlyJS.js') ;
 
 tap('fastly-lib', function(test) {
