@@ -16,9 +16,7 @@
     "cache",
     "client"
   ],
-  "devDependencies": {
-    "tap": "~0.3.3"
-  },
+  "devDependencies": {},
   "author": "luisan00",
   "license": "MIT"
 }
