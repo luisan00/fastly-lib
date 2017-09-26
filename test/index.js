@@ -6,6 +6,7 @@ tap.test('fastly-lib', function(t) {
 	t.type(flib, 'object', 'Returns an Object');
 	t.type(flib.request, 'function', 'method request');
 	t.type(flib.purge, 'function', 'method purge');
+	t.type(flib.purge, 'function', 'method purge_all');
 	t.type(flib.stats, 'function', 'method stats');
 	t.type(flib.content, 'function', 'method content');
 	t.type(flib.datacenters, 'function', 'method datacenters');
