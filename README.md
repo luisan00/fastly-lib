@@ -54,12 +54,14 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<th>Method</th>
 		<th>Params</th>
+		<th></th>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge(url)<code>
 		</td>
 		<td>url: String (required)</td>
+		<td><svg class="octicon octicon-link-external"></svg></td>
 	</tr>
 	<tr>
 		<td>
