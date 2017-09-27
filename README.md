@@ -76,8 +76,10 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>url: String</td>
 	</tr>
 	<tr>
-		<td>.softpurge_by_key(service_id, key)</td>
-		<td>service_id: String\n key: String</td>
+		<td>
+			<code width="100%">.softpurge_by_key(service_id, key)</code>
+		</td>
+		<td>service_id: String (required), key: String (required)</td>
 	</tr>
 	<tr>
 		<td colspan="2"></td>
@@ -92,19 +94,19 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>
 			<code>.datacenters()</code>
 		</td>
-		<td>---</td>
+		<td>None</td>
 	</tr>
 	<tr>
 		<td>
 			<code>.docs()</code>
 		</td>
-		<td>---</td>
+		<td>None</td>
 	</tr>
 	<tr>
 		<td>
 			<code>.public_ip_list()<code>
 		</td>
-		<td></td>
+		<td>None</td>
 	</tr>
 
 </table>
