@@ -87,15 +87,21 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>url: String</td>
 	</tr>
 	<tr>
-		<td>.datacenters()</td>
+		<td>
+			<code>.datacenters()</code>
+		</td>
 		<td>---</td>
 	</tr>
 	<tr>
-		<td>.docs()</td>
+		<td>
+			<code>.docs()</code>
+		</td>
 		<td>---</td>
 	</tr>
 	<tr>
-		<td><code>.public_ip_list()<code></td>
+		<td>
+			<code>.public_ip_list()<code>
+		</td>
 		<td></td>
 	</tr>
 
