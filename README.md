@@ -39,6 +39,20 @@ fastly.datacenters()
   })
 ```
 
+### API
+
+<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+</table>
+
 ### License
 
 fastly-lib is licensed under the <a href="LICENSE">MIT License</a> © 2017 luisan00
