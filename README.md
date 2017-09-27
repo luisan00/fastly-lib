@@ -48,7 +48,7 @@ fastly.datacenters()
 		<th>Docs</th>
 	</tr>
 	<tr>
-		<td></td>
+		<td padding="100"></td>
 	</tr>
 
 </table>
