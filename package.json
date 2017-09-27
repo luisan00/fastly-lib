@@ -4,7 +4,7 @@
   "description": "API fastly client",
   "main": "lib/fastly.js",
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "node ./test/tests.js"
   },
   "repository": {
     "type": "git",
