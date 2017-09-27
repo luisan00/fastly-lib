@@ -129,6 +129,8 @@ fastly.purge('http://example.url/path/to/resource')
 
 </table>
 
+### Contributing
+ I'll be happy to hear your ideas or fix some bug. Please feel free to send me a message or open a new issue.
 
 
 ### License
