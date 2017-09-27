@@ -56,7 +56,9 @@ fastly.purge('http://example.url/path/to/resource')
 		<th>Params</th>
 	</tr>
 	<tr>
-		<td>.purge(url)</td>
+		<td>
+			<code>.purge(url)<code>
+		</td>
 		<td>url: String</td>
 	</tr>
 	<tr>
@@ -64,20 +66,26 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>service_id: String</td>
 	</tr>
 	<tr>
-		<td>.purge_by_key(service_id, key)</td>
+		<td>
+			<code>.purge_by_key(service_id, key)</code>
+		</td>
 		<td>service_id: String, key: String</td>
 	</tr>
 	<tr>
-		<td>.purge_multiple(service_id, keys)</td>
-		<td>service_id: String, keys: Array of Strings</td>
+		<td>
+			<code>.purge_multiple(service_id, keys)</code>
+		</td>
+		<td>service_id: String <br/>keys: Array of Strings</td>
 	</tr>
 	<tr>
-		<td>.softpurge(url)</td>
+		<td>
+			<code>.softpurge(url)</code>
+		</td>
 		<td>url: String</td>
 	</tr>
 	<tr>
 		<td>
-			<code style="background-color: transparent;">.softpurge_by_key(service_id, key)</code>
+			<code>.softpurge_by_key(service_id, key)</code>
 		</td>
 		<td>service_id: String (required), key: String (required)</td>
 	</tr>
