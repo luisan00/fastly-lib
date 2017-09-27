@@ -40,7 +40,8 @@ fastly.datacenters()
 ```
 
 ### API
-* purge
+- purge
+	<small>purge an url</small>
 * purge_all
 * purge_by_key
 * purge_multiple
