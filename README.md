@@ -41,7 +41,7 @@ fastly.datacenters()
 
 ### API
 
-<table width="100%">
+<table style="width:100%">
 	<tr>
 		<th>Method</th>
 		<th>Params</th>
