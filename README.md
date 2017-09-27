@@ -43,12 +43,19 @@ fastly.datacenters()
 
 <table width="100%">
 	<tr>
-		<th width="20%">Method</th>
-		<th width="70%">Params</th>
+		<th width="10%">Method</th>
+		<th width="40%">Parameter</th>
+		<th width="40%">Type</th>
 		<th width="10%">Docs</th>
 	</tr>
 	<tr>
-		<td colspan="3">Purging</td>
+		<td>purge</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>URL</td>
+		<td>String</td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">-></a></td>
 	</tr>
 
 </table>
