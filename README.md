@@ -42,11 +42,11 @@ fastly.datacenters()
 ### API
 
 <table>
-	<tbody>
+	<thead>
 		<tr>
 			<td>method</td>
 		</tr>
-	</tbody>
+	</thead>
 </table>
 
 ### License
