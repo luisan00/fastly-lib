@@ -59,23 +59,27 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>
 			<code>.purge(url)<code>
 		</td>
-		<td>url: String</td>
+		<td>url: String (required)</td>
 	</tr>
 	<tr>
-		<td>.purge_all(service_id)</td>
-		<td>service_id: String</td>
+		<td>
+			<code>.purge_all(service_id)</code>
+		</td>
+		<td>service_id: String (required)</td>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge_by_key(service_id, key)</code>
 		</td>
-		<td>service_id: String, key: String</td>
+		<td>service_id: String (required)<br/>
+			key: String (required)
+		</td>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge_multiple(service_id, keys)</code>
 		</td>
-		<td>service_id: String (required) <br/>
+		<td>service_id: String (required)<br/>
 			keys: Array of Strings (required)
 		</td>
 	</tr>
@@ -89,10 +93,12 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>
 			<code>.softpurge_by_key(service_id, key)</code>
 		</td>
-		<td>service_id: String (required) key: String (required)</td>
+		<td>service_id: String (required)<br/>
+			key: String (required)
+		</td>
 	</tr>
 	<tr>
-		<td colspan="2">**Purging**</td>
+		<td colspan="2"></td>
 	</tr>
 	<tr>
 		<td>
