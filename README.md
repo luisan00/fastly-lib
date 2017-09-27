@@ -30,7 +30,7 @@ const fastly = new fastlyLib('your_api_key');
 // get a list of Fastly datacenters.
 fastly.datacenters()
   .then((res) => {
-    // do something with the response.
+    // do something with the response. :satisfied:
     console.log(res);
   })
   .catch((err) => {
@@ -50,9 +50,6 @@ fastly.datacenters()
 	</tr>
 	<tr>
 		<td>purge</td>
-	</tr>
-	<tr>
-		<td></td>
 		<td>URL</td>
 		<td>String</td>
 		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">-></a></td>
