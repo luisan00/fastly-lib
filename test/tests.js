@@ -20,6 +20,10 @@ tap.test('purge', function(t) {
 	var flib = new fastly(fastly_api_key);
 
 	t.type(flib, 'object', 'constructor');
+	t.type(flib.purge, 'object', 'purge method');
+	t.type(flib.purge_all, 'object', 'purge all method');
+	t.type(flib.purge_by_key, 'object', 'purge by key method');
+	t.type(flib.purge_multiple, 'object', 'purge multiple method');
 	t.end();
 });
 
