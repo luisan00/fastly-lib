@@ -13,3 +13,12 @@ tap.test('utilities', function(t) {
 	t.type(flib.public_ip_list, 'function', 'method public_ip_list');
 	t.end();
 });
+
+tap.test('purge', function(t) {
+
+	var flib = new fastly(fastly_api_key);
+
+	t.type(flib, 'object', 'constructor');
+	t.end();
+});
+
