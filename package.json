@@ -4,7 +4,7 @@
   "description": "API fastly client",
   "main": "lib/fastly.js",
   "scripts": {
-    "test": "tap test/tests.js --coverage"
+    "test": "tap test/*.js --coverage"
   },
   "repository": {
     "type": "git",

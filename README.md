@@ -42,14 +42,10 @@ fastly.datacenters()
 ### API
 
 <table>
-	<thead>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-	</thead>
 	<tbody>
-		
+		<tr>
+			<td>method</td>
+		</tr>
 	</tbody>
 </table>
 
