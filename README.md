@@ -68,7 +68,7 @@ fastly.purge('http://example.url/path/to/resource')
 			<code>.purge_all(service_id)</code>
 		</td>
 		<td>service_id: String (required)</td>
-		<td><a href="">:link:</a></td>
+		<td><a target="_blank" href="https://docs.fastly.com/api/purge#purge_bee5ed1a0cfd541e8b9f970a44718546">:link:</a></td>
 	</tr>
 	<tr>
 		<td>
