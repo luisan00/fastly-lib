@@ -30,7 +30,7 @@ const fastly = new fastlyLib('your_api_key');
 // get a list of Fastly datacenters.
 fastly.datacenters()
   .then((res) => {
-    // do something with the response. :satisfied:
+    // do something with the response.
     console.log(res);
   })
   .catch((err) => {
@@ -41,21 +41,13 @@ fastly.datacenters()
 
 ### API
 
-<table width="100%">
-	<tr>
-		<th width="10%">Method</th>
-		<th width="40%">Parameter</th>
-		<th width="40%">Type</th>
-		<th width="10%">Docs</th>
-	</tr>
-	<tr>
-		<td>purge</td>
-		<td>URL</td>
-		<td>String</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">-></a></td>
-	</tr>
+	* purge
+	* purge_all
+	* purge_by_key
+	* purge_multiple
+	* softpurge
+	* softpurge_by_key
 
-</table>
 
 ### License
 
