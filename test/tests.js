@@ -14,6 +14,7 @@ tap.test('utilities', function(t) {
 	t.end();
 });
 
+
 tap.test('purge', function(t) {
 
 	var flib = new fastly(fastly_api_key);
