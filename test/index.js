@@ -1,14 +1,14 @@
 const tap = require('tap');
-const fastly_lib = require('../lib/fastlyJS.js') ;
+const fastly = require('../lib/fastly.js') ;
 
-tap.test('fastly-lib', function(t) {
-	var flib = new fastly_lib('fastly-api-key');
-	t.type(flib, 'object', 'Returns an Object');
-	t.type(flib.request, 'function', 'method request');
-	t.type(flib.purge, 'function', 'method purge');
-	t.type(flib.purge, 'function', 'method purge_all');
-	t.type(flib.stats, 'function', 'method stats');
+tap.test('utilities', function(t) {
+
+	var flib = new fastly('fastly-api-key');
+
+	t.type(flib, 'object', 'constructor');
 	t.type(flib.content, 'function', 'method content');
 	t.type(flib.datacenters, 'function', 'method datacenters');
+	t.type(flib.docs, 'function', 'method docs');
+	t.type(flib.public_ip_list, 'function', 'method public_ip_list');
 	t.end();
 });

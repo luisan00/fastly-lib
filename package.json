@@ -2,9 +2,9 @@
   "name": "fastly-lib",
   "version": "0.9.1",
   "description": "API fastly client",
-  "main": "lib/fastlyJS.js",
+  "main": "lib/fastly.js",
   "scripts": {
-    "test": "node ./test/index.js"
+    "test": "node ./test/*.js"
   },
   "repository": {
     "type": "git",
