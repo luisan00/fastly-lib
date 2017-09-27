@@ -39,6 +39,98 @@ fastly.datacenters()
   })
 ```
 
+keeping in mind the above structure, the only change between methods is the parameter or parameters, for example:
+
+```js
+fastly.purge('http://example.url/path/to/resource')
+	// .then() and .catch() returns the result or error of the call
+	...
+```
+
+
+### API
+
+<table>
+	<tr>
+		<th>Method</th>
+		<th>Params</th>
+		<th>Docs</th>
+	</tr>
+	<tr>
+		<td>
+			<code>.purge(url)<code>
+		</td>
+		<td>url: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.purge_all(service_id)</code>
+		</td>
+		<td>service_id: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.purge_by_key(service_id, key)</code>
+		</td>
+		<td>service_id: String (required), key: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.purge_multiple(service_id, keys)</code>
+		</td>
+		<td>service_id: String (required), keys: Array of Strings (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.softpurge(url)</code>
+		</td>
+		<td>url: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.softpurge_by_key(service_id, key)</code>
+		</td>
+		<td>service_id: String (required), key: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.content(url)</code>
+		</td>
+		<td>url: String (required)</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.datacenters()</code>
+		</td>
+		<td>None</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.docs()</code>
+		</td>
+		<td>None</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+	<tr>
+		<td>
+			<code>.public_ip_list()<code>
+		</td>
+		<td>None</td>
+		<td><a href="">:link:</a></td>
+	</tr>
+
+</table>
+
+
+
 ### License
 
 fastly-lib is licensed under the <a href="LICENSE">MIT License</a> © 2017 luisan00
