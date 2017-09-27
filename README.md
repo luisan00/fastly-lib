@@ -130,7 +130,7 @@ fastly.purge('http://example.url/path/to/resource')
 </table>
 
 ### Contributing
- I'll be happy to hear your ideas or fix some bug. Please feel free to send me a message or open a new issue.
+ I'll be happy to hear your ideas or fix some bug. Please feel free to send me a message or create a new <a href="https://github.com/luisan00/fastly-lib/issues">issue</a>
 
 
 ### License
