@@ -52,8 +52,8 @@ fastly.purge('http://example.url/path/to/resource')
 
 <table>
 	<tr>
-		<td>Method</td>
-		<td>Params</td>
+		<th>Method</th>
+		<th>Params</th>
 	</tr>
 	<tr>
 		<td>.purge(url)</td>
@@ -67,12 +67,20 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>.purge_by_key(service_id, key)</td>
 		<td>service_id: String, key: String</td>
 	</tr>
+	<tr>
+		<td>.purge_multiple(service_id, keys)</td>
+		<td>service_id: String, keys: Array of Strings</td>
+	</tr>
+	<tr>
+		<td>.softpurge(url)</td>
+		<td>url: String</td>
+	</tr>
+	<tr>
+		<td>.softpurge_by_key(service_id, key)</td>
+		<td>service_id: String, key: String</td>
+	</tr>
 </table>
 
-
-.purge_multiple
-.softpurge
-.softpurge_by_key
 
 
 ### License
