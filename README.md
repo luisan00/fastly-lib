@@ -40,13 +40,12 @@ fastly.datacenters()
 ```
 
 ### API
-
-	* purge
-	* purge_all
-	* purge_by_key
-	* purge_multiple
-	* softpurge
-	* softpurge_by_key
+* purge
+* purge_all
+* purge_by_key
+* purge_multiple
+* softpurge
+* softpurge_by_key
 
 
 ### License
