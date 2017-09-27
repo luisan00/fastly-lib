@@ -93,13 +93,9 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>
 			<code>.softpurge_by_key(service_id, key)</code>
 		</td>
-		<td>
-			<code>service_id: String (required)</code><br>
-			<code>key: String (required)       </code>
+		<td>service_id: String (required)<br>
+			key: String (required)
 		</td>
-	</tr>
-	<tr>
-		<td colspan="2"></td>
 	</tr>
 	<tr>
 		<td>
