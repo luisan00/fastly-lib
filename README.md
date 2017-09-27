@@ -45,8 +45,14 @@ fastly.datacenters()
 	<thead>
 		<tr>
 			<td>method</td>
+			
 		</tr>
 	</thead>
+	<tbody>
+		<tr>
+			<td>purge</td>
+		</tr>
+	</tbody>
 </table>
 
 ### License
