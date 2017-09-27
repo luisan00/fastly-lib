@@ -61,42 +61,42 @@ fastly.purge('http://example.url/path/to/resource')
 			<code>.purge(url)<code>
 		</td>
 		<td>url: String (required)</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">link</a></td>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge_all(service_id)</code>
 		</td>
 		<td>service_id: String (required)</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_bee5ed1a0cfd541e8b9f970a44718546">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_bee5ed1a0cfd541e8b9f970a44718546">link</a></td>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge_by_key(service_id, key)</code>
 		</td>
 		<td>service_id: String (required), key: String (required)</td>
-		<td><a href="">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_d8b8e8be84c350dd92492453a3df3230">link</a></td>
 	</tr>
 	<tr>
 		<td>
 			<code>.purge_multiple(service_id, keys)</code>
 		</td>
 		<td>service_id: String (required), keys: Array of Strings (required)</td>
-		<td><a href="">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_db35b293f8a724717fcf25628d713583">link</a></td>
 	</tr>
 	<tr>
 		<td>
 			<code>.softpurge(url)</code>
 		</td>
 		<td>url: String (required)</td>
-		<td><a href="">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#soft_purge_0c4f56f3d68e9bed44fb8b638b78ea36">link</a></td>
 	</tr>
 	<tr>
 		<td>
 			<code>.softpurge_by_key(service_id, key)</code>
 		</td>
 		<td>service_id: String (required), key: String (required)</td>
-		<td><a href="">:link:</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">link</a></td>
 	</tr>
 	<tr>
 		<td>
