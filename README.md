@@ -39,14 +39,40 @@ fastly.datacenters()
   })
 ```
 
+keeping in mind the above structure, the only change between methods is the parameter or parameters, for example:
+
+```js
+fastly.purge('http://example.url/path/to/resource')
+	// .then() and .catch() returns the result or error of the call
+	...
+```
+
+
 ### API
-- purge
-	<small>purge an url</small>
-* purge_all
-* purge_by_key
-* purge_multiple
-* softpurge
-* softpurge_by_key
+
+<table>
+	<tr>
+		<td>Method</td>
+		<td>Params</td>
+	</tr>
+	<tr>
+		<td>.purge(url)</td>
+		<td>url: String</td>
+	</tr>
+	<tr>
+		<td>.purge_all(service_id)</td>
+		<td>service_id: String</td>
+	</tr>
+	<tr>
+		<td>.purge_by_key(service_id, key)</td>
+		<td>service_id: String, key: String</td>
+	</tr>
+</table>
+
+
+.purge_multiple
+.softpurge
+.softpurge_by_key
 
 
 ### License
