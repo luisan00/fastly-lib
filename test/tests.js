@@ -23,21 +23,14 @@ tap.test('fastly constructor', function(t){
 	t.end();
 })
 
-tap.test('utilities', function(t) {
+tap.test('fastly.content', function(t) {
+	var flib = new fastly(fastly_api_key);
 	t.type(flib.content, 'function', '.content() => is function')
 	flib.content()
 		.then((res)=>{
 			t.comment(res)
 			t.type(res, 'function', '.content().then => return function done.')
 		})
-		.catch((err)=>{
-			t.comment(err)
-			t.type(res, 'function', '.content().catch => return function error.')
-		})
-
-	t.type(flib.datacenters, 'function', 'datacenters() => is function');
-	t.type(flib.docs, 'function', 'docs() => is function');
-	t.type(flib.public_ip_list, 'function', 'public_ip_list() => is function');
 	t.end();
 });
 
