@@ -15,7 +15,11 @@ tap.test('fastly constructor', function(t){
 			'Fastly-Key': fastly_api_key,
 			'Accept': 'application/json'
 		}
-	}, 'options => match the pattern');
+	}, 'options => match the initial pattern');
+	t.type(flib.request.send, 'function', '..send => is function');
+	t.type(flib.request.get, 'function', '..get => is function');
+	t.type(flib.request.post, 'function', '..post => is function');
+	t.type(flib.request.purge, 'function', '..purge => is function');
 	t.end();
 })
 
