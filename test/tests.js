@@ -30,12 +30,18 @@ tap.test('fastly constructor', function(t){
 tap.test('fastly.content', function(t) {
 	var flib = new fastly(fastly_api_key);
 	t.type(flib.content, 'function', '.content() => is function')
+	// 
 	flib.content(content_url)
 		.then((res)=>{
 			t.comment(res)
-			t.type(res, 'function', '.content().then => return function done.')
+			t.type(res, 'function', '.content().then => return function done.');
+			t.end();
 		})
-	t.end();
+		.catch((err)=>{
+			t.comment(err);
+			t.end();
+		})
+	
 });
 
 
