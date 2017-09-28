@@ -60,7 +60,7 @@ tap.test('...content.catch()', function(t) {
 			t.end();
 		})
 		.catch((err)=> {
-			t.type(res, 'object', '..catch() => is object');
+			t.type(err, 'object', '..catch() => is object');
 			t.end();
 		})
 });
