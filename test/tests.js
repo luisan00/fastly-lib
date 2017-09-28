@@ -7,9 +7,15 @@ tap.test('fastly constructor', function(t){
 
 	t.type(flib.request, 'object', 'request => object');
 	t.type(flib.request.options, 'object', '.options => object');
-	t.type(flib.request.options.method, 'string', '.method => string');
-	t.type(flib.request.options.hostname, 'string', '.hostname => string');
-	t.type(flib.request.options.path, 'string', '.path => string');
+	t.match(flib.request.options, {
+		method: 'GET',
+		hostname: 'api.fastly.com',
+		path: '/',
+		headers: {
+			'Fastly-Key': api_key,
+			'Accept': 'application/json'
+		}
+	}, 'options => match the pattern');
 	t.end();
 })
 
