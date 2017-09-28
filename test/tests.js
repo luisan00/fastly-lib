@@ -27,15 +27,15 @@ tap.test('fastly constructor', function(t){
 	t.end();
 })
 
+
+// -- test block: fn content --
 tap.test('function content', function(t) {
 	var flib = new fastly(fastly_api_key);
 	t.type(flib.content, 'function', '.content() => is function')
 	t.end();
 });
-
 tap.test('...content.then()', function(t) {
 	var flib = new fastly(fastly_api_key);
-	//
 	t.comment('Executing function: content')
 	t.comment('Waiting a response through .then()...')
 	flib.content(content_url)
@@ -48,7 +48,6 @@ tap.test('...content.then()', function(t) {
 			t.end();
 		})
 });
-
 tap.test('...content.catch()', function(t) {
 	var flib = new fastly(fastly_api_key);
 	//
@@ -65,6 +64,68 @@ tap.test('...content.catch()', function(t) {
 		})
 });
 
+// -- test block: fn datacenters --
+tap.test('function datacenters', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.type(flib.datacenters, 'function', '.datacenters() => is function')
+	t.end();
+});
+tap.test('...datacenters.then()', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.comment('Executing function: datacenters')
+	t.comment('Waiting a response through .then()...')
+	flib.datacenters()
+		.then((res)=>{
+			t.type(res, 'object', '..then() => is object');
+			t.end();
+		})
+		.catch((err)=>{
+			t.fail(err);
+			t.end();
+		})
+});
+
+// -- test block: fn docs --
+tap.test('function docs', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.type(flib.docs, 'function', '.docs() => is function')
+	t.end();
+});
+tap.test('...docs.then()', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.comment('Executing function: docs')
+	t.comment('Waiting a response through .then()...')
+	flib.docs()
+		.then((res)=>{
+			t.type(res, 'object', '..then() => is object');
+			t.end();
+		})
+		.catch((err)=>{
+			t.fail(err);
+			t.end();
+		})
+});
+
+// -- test block: fn public_ip_list --
+tap.test('function public_ip_list', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.type(flib.public_ip_list, 'function', '.public_ip_list() => is function')
+	t.end();
+});
+tap.test('...public_ip_list.then()', function(t) {
+	var flib = new fastly(fastly_api_key);
+	t.comment('Executing function: public_ip_list')
+	t.comment('Waiting a response through .then()...')
+	flib.public_ip_list()
+		.then((res)=>{
+			t.type(res, 'object', '..then() => is object');
+			t.end();
+		})
+		.catch((err)=>{
+			t.fail(err);
+			t.end();
+		})
+});
 
 tap.test('purge', function(t) {
 
