@@ -2,6 +2,13 @@ const tap = require('tap');
 const fastly = require('../lib/fastly.js');
 const fastly_api_key =  process.env.FASTLY_API_KEY || ''
 
+tap.test('request', function(t){
+	var flib = new fastly(fastly_api_key);
+
+	t.type(flib.request, 'object', 'request object');
+	t.end();
+})
+
 tap.test('utilities', function(t) {
 
 	var flib = new fastly(fastly_api_key);
@@ -26,4 +33,3 @@ tap.test('purge', function(t) {
 	t.type(flib.purge_multiple, 'function', 'purge multiple method');
 	t.end();
 });
-
