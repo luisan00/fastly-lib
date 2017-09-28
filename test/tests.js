@@ -25,10 +25,13 @@ tap.test('fastly constructor', function(t){
 
 tap.test('utilities', function(t) {
 	t.type(flib.content, 'function', '.content() => is function')
+	flib.content()
 		.then((res)=>{
+			t.comment(res)
 			t.type(res, 'function', '.content().then => return function done.')
 		})
 		.catch((err)=>{
+			t.comment(err)
 			t.type(res, 'function', '.content().catch => return function error.')
 		})
 
