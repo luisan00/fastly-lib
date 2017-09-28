@@ -12,7 +12,7 @@ tap.test('fastly constructor', function(t){
 		hostname: 'api.fastly.com',
 		path: '/',
 		headers: {
-			'Fastly-Key': api_key,
+			'Fastly-Key': fastly_api_key,
 			'Accept': 'application/json'
 		}
 	}, 'options => match the pattern');
