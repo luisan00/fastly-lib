@@ -94,7 +94,7 @@ tap.test('.softpurge()', function(t) {
 });
 tap.test('.softpurge.then()', function(t) {
 	t.comment('Waiting a response through .then()...')
-	flib.softpurge(content_url, )
+	flib.softpurge(content_url)
 		.then((res)=>{
 			t.type(res, 'object', 'return object');
 			t.end();
