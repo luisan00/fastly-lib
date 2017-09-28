@@ -42,7 +42,7 @@ tap.test('...content.then()', function(t) {
 		.then((res)=>{
 			t.type(res, 'object', '..then() => is object');
 			t.end();
-		}).
+		})
 		.catch((err)=>{
 			t.fail(err);
 			t.end();
