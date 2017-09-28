@@ -5,6 +5,8 @@ const fastly_api_key =  process.env.FASTLY_API_KEY || '';
 const content_url =  process.env.CONTENT_URL || '';
 const service_id = process.env.SERVICE_ID || '';
 
+var flib = new fastly(fastly_api_key);
+
 // --> fastly() --
 tap.test('fastly constructor', function(t) {
 	t.type(flib.request, 'object', 'request => object');
