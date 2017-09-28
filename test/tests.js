@@ -27,21 +27,42 @@ tap.test('fastly constructor', function(t){
 	t.end();
 })
 
-tap.test('fastly.content', function(t) {
+tap.test('function content', function(t) {
 	var flib = new fastly(fastly_api_key);
 	t.type(flib.content, 'function', '.content() => is function')
-	// 
+	t.end();
+});
+
+tap.test('...content.then()', function(t) {
+	var flib = new fastly(fastly_api_key);
+	//
+	t.comment('Executing function: content')
+	t.comment('Waiting a response through .then()...')
 	flib.content(content_url)
 		.then((res)=>{
-			t.comment(res)
-			t.type(res, 'function', '.content().then => return function done.');
+			t.type(res, 'object', '..then() => is object');
 			t.end();
-		})
+		}).
 		.catch((err)=>{
-			t.comment(err);
+			t.fail(err);
 			t.end();
 		})
-	
+});
+
+tap.test('...content.catch()', function(t) {
+	var flib = new fastly(fastly_api_key);
+	//
+	t.comment('Executing function: content')
+	t.comment('Waiting an error through .catch()')
+	flib.content('sorry for the inconveniences, im testing a new library :(')
+		.then((res)=> {
+			t.fail(res);
+			t.end();
+		})
+		.catch((err)=> {
+			t.type(res, 'object', '..catch() => is object');
+			t.end();
+		})
 });
 
 
