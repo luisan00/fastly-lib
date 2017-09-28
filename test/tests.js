@@ -6,6 +6,7 @@ tap.test('request', function(t){
 	var flib = new fastly(fastly_api_key);
 
 	t.type(flib.request, 'object', 'request object');
+	t.type(flib.request.options, 'object', 'request.options object');
 	t.end();
 })
 
