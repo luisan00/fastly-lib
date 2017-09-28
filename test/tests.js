@@ -16,41 +16,6 @@ tap.test('fastly constructor', function(t) {
 	t.end();
 })
 
-// --> .purge()
-tap.test('.purge()', function(t) {
-	t.type(flib.purge, 'function', 'return function')
-	t.end();
-});
-tap.test('.purge.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
-	flib.purge(content_url)
-		.then((res)=>{
-			t.type(res, 'object', 'return object');
-			t.end();
-		})
-		.catch((err)=>{
-			t.fail(err);
-			t.end();
-		})
-});
-
-// --> .purge_all()
-tap.test('.purge_all()', function(t) {
-	t.type(flib.purge_all, 'function', 'return function')
-	t.end();
-});
-tap.test('.purge_all.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
-	flib.purge_all(service_id)
-		.then((res)=>{
-			t.type(res, 'object', 'return object');
-			t.end();
-		})
-		.catch((err)=>{
-			t.fail(err);
-			t.end();
-		})
-});
 // --> .purge_by_key()
 tap.test('.purge_by_key()', function(t) {
 	t.type(flib.purge_by_key, 'function', 'return function')
