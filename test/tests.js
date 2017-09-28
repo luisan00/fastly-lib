@@ -2,11 +2,14 @@ const tap = require('tap');
 const fastly = require('../lib/fastly.js');
 const fastly_api_key =  process.env.FASTLY_API_KEY || ''
 
-tap.test('request', function(t){
+tap.test('fastly constructor', function(t){
 	var flib = new fastly(fastly_api_key);
 
-	t.type(flib.request, 'object', 'request object');
-	t.type(flib.request.options, 'object', 'request.options object');
+	t.type(flib.request, 'object', 'request => object');
+	t.type(flib.request.options, 'object', '.options => object');
+	t.type(flib.request.options.method, 'string', '.method => string');
+	t.type(flib.request.options.hostname, 'string', '.hostname => string');
+	t.type(flib.request.options.path, 'string', '.path => string');
 	t.end();
 })
 
