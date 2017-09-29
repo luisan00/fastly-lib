@@ -36,21 +36,5 @@ tap.test('request GET -> catch()', (t) => {
             t.end();
         })
 });
-/*
-// --> .request.send(< POST >) => .then(object)
-tap.test('request POST -> then()', (t) => {
-    t.type(flib.request, 'object', 'request => object');
-    flib.request.options.method = 'POST';
-    flib.request.options.path = `/service/${service_id}/purge_all`;
-    flib.request.send()
-        .then((res) => {
-            t.type(res, 'object', '.then(object)');
-            t.end();
-        })
-        .catch((err) => {
-            t.fail(err);
-            t.end();
-        })
-});
-*/
+
 

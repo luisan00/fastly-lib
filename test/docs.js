@@ -10,7 +10,6 @@ tap.test('.docs()', function(t) {
 	t.end();
 });
 tap.test('.docs.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
 	flib.docs()
 		.then((res)=>{
 			t.type(res, 'object', 'return object');
