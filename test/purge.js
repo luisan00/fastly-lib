@@ -11,7 +11,6 @@ tap.test('.purge()', function(t) {
 	t.end();
 });
 tap.test('.purge.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
 	flib.purge(content_url)
 		.then((res)=>{
 			t.type(res, 'object', 'return object');

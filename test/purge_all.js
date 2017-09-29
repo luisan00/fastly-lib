@@ -11,7 +11,6 @@ tap.test('.purge_all()', function(t) {
 	t.end();
 });
 tap.test('.purge_all.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
 	flib.purge_all(service_id)
 		.then((res)=>{
 			t.type(res, 'object', 'return object');

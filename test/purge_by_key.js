@@ -12,7 +12,6 @@ tap.test('.purge_by_key()', function(t) {
 	t.end();
 });
 tap.test('.purge_by_key.then()', function(t) {
-	t.comment('Waiting a response through .then()...')
 	flib.purge_by_key(service_id, key_id)
 		.then((res)=>{
 			t.type(res, 'object', 'return object');

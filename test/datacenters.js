@@ -10,7 +10,6 @@ tap.test('.datacenters()', function(t) {
 	t.end();
 });
 tap.test('.datacenters.then()', function(t) {
-	t.comment('Waiting a response through .then()')
 	flib.datacenters()
 		.then((res)=>{
 			t.type(res, 'object', 'return object');
