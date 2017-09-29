@@ -59,7 +59,7 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<td>.stats(params)</td>
 		<td>params: Object(optional)</td>
-		<td><a href="">•••</a></td>
+		<td><a href="https://docs.fastly.com/api/stats">•••</a></td>
 	</tr>
 	<tr>
 		<td>.purge(url)</td>
