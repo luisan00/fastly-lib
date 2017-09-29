@@ -24,7 +24,8 @@ tap.test('request object', (t) => {
 // --> .request.send() => .catch(object)
 tap.test('request object', (t) => {
     flib.request.options.method = 'POST';
-    flib.request.options.path = `/cucuuu`;
+    var wrong_url = 'sorry for the inconveniences, im testing a new library :(';
+    flib.request.options.path = `/content/edge_check?url=${wrong_url}`;
     flib.request.send()
         .then((res) => {
             t.fail(res);
