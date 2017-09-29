@@ -13,6 +13,7 @@ tap.test('request object', (t) => {
     flib.request.send()
         .then((res) => {
             t.type(res, 'object', '.then(object)');
+            t.end();
         })
         .catch((err) => {
             t.fail(err);
