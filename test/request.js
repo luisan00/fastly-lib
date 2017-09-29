@@ -5,12 +5,12 @@ const fastly_api_key = process.env.FASTLY_API_KEY || '';
 
 var flib = new fastly(fastly_api_key);
 
-// --> .send() => .then(object)
+// --> .request.send() => .then(object)
 tap.test('request object', (t) => {
     t.type(flib.request, 'object', 'request => object');
     flib.request.options.method = 'GET';
     flib.request.options.path = `/content/edge_check?url=${content_url}`;
-    flib.send()
+    flib.request.send()
         .then((res) => {
             t.type(res, 'object', '.then(object)');
         })
@@ -20,11 +20,11 @@ tap.test('request object', (t) => {
         })
 
 });
-// --> .send() => .catch(object)
+// --> .request.send() => .catch(object)
 tap.test('request object', (t) => {
     flib.request.options.method = 'GET';
     flib.request.options.path = `/content/edge_check?url=http://none`;
-    flib.send()
+    flib.request.send()
         .then((res) => {
             t.fail(res);
             t.end()
