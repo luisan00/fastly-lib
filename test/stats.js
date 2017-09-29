@@ -19,7 +19,7 @@ tap.test('.stats.then()', function(t) {
 });
 
 // --> .stats() w.params
-tap.test('.stats.then()', function(t) {
+tap.test('.stats()', function(t) {
     t.type(flib.stats, 'function', 'return function')
     flib.stats({
             from: 'Yesterday',
@@ -27,6 +27,7 @@ tap.test('.stats.then()', function(t) {
             by: 'Hour'
         })
         .then((res) => {
+        	t.
             t.type(res, 'object', 'return object');
             t.end();
         })
