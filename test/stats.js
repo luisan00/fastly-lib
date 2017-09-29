@@ -27,7 +27,6 @@ tap.test('.stats()', function(t) {
             by: 'Hour'
         })
         .then((res) => {
-        	t.
             t.type(res, 'object', 'return object');
             t.end();
         })
