@@ -1,11 +1,12 @@
 const tap = require('tap');
 const fastly = require('../lib/fastly.js');
 const content_url = process.env.CONTENT_URL || '';
+const service_id = process.env.SERVICE_ID || '';
 const fastly_api_key = process.env.FASTLY_API_KEY || '';
 
 var flib = new fastly(fastly_api_key);
 
-// --> .request.send() => .then(object)
+// --> .request.send(< GET >) => .then(object)
 tap.test('request object', (t) => {
     t.type(flib.request, 'object', 'request => object');
     flib.request.options.method = 'GET';
@@ -19,7 +20,6 @@ tap.test('request object', (t) => {
             t.fail(err);
             t.end();
         })
-
 });
 // --> .request.send() => .catch(object)
 tap.test('request object', (t) => {
@@ -35,5 +35,21 @@ tap.test('request object', (t) => {
             t.type(err, 'object', '.catch(object)');
             t.end();
         })
-
 });
+
+// --> .request.send(< POST >) => .then(object)
+tap.test('request object', (t) => {
+    t.type(flib.request, 'object', 'request => object');
+    flib.request.options.method = 'POST';
+    flib.request.options.path = `/service/${service_id}/purge_all`;
+    flib.request.send()
+        .then((res) => {
+            t.type(res, 'object', '.then(object)');
+            t.end();
+        })
+        .catch((err) => {
+            t.fail(err);
+            t.end();
+        })
+});
+
