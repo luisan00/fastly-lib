@@ -57,6 +57,11 @@ fastly.purge('http://example.url/path/to/resource')
 		<th>Docs</th>
 	</tr>
 	<tr>
+		<td>.stats(params)</td>
+		<td>params: Object(optional)</td>
+		<td><a href="">•••</a></td>
+	</tr>
+	<tr>
 		<td>.purge(url)</td>
 		<td>url: String (required)</td>
 		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">link</a></td>
