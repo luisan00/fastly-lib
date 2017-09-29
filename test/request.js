@@ -24,7 +24,7 @@ tap.test('request object', (t) => {
 // --> .request.send() => .catch(object)
 tap.test('request object', (t) => {
     flib.request.options.method = 'GET';
-    flib.request.options.path = `/content/edge_check?url=http://none`;
+    flib.request.options.path = `/content/edge_check?url=null`;
     flib.request.send()
         .then((res) => {
             t.fail(res);
