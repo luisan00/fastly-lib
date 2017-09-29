@@ -23,7 +23,7 @@ tap.test('request object', (t) => {
 });
 // --> .request.send() => .catch(object)
 tap.test('request object', (t) => {
-    flib.request.options.method = 'GET';
+    flib.request.options.method = 'POST';
     flib.request.options.path = `/cucuuu`;
     flib.request.send()
         .then((res) => {
