@@ -58,7 +58,7 @@ fastly.purge('http://example.url/path/to/resource')
 	</tr>
 	<tr>
 		<td>.versions(service_id)</td>
-		<td>params: String </td>
+		<td>service_id: String </td>
 		<td><a href="https://docs.fastly.com/api/stats">•••</a></td>
 	</tr>
 	<tr>
