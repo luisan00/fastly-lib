@@ -50,6 +50,8 @@ fastly.purge('http://example.url/path/to/resource')
 
 ### API
 
+#### Extras
+
 <table>
 	<tr>
 		<th>Method</th>
@@ -57,8 +59,33 @@ fastly.purge('http://example.url/path/to/resource')
 		<th>Docs</th>
 	</tr>
 	<tr>
+		<td>.list_domains()</td>
+		<td>None</td>
+		<td><a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">link</a></td>
+	</tr>
+</table>
+
+#### Fastly API
+***fastly-lib*** also provides access to Fastly API functions through the following methods.
+<table>
+	<tr>
+		<th>Method</th>
+		<th>Params</th>
+		<th>Docs</th>
+	</tr>
+	<tr>
+		<td>.domains(service_id, version)</td>
+		<td>service_id: String, version: Number</td>
+		<td><a href="">link</a></td>
+	</tr>
+	<tr>
+		<td>.service()</td>
+		<td>None</td>
+		<td><a href="">link</a></td>
+	</tr>
+	<tr>
 		<td>.versions(service_id)</td>
-		<td>service_id: String </td>
+		<td>service_id: String</td>
 		<td><a href="https://docs.fastly.com/api/config#version_dfde9093f4eb0aa2497bbfd1d9415987">link</a></td>
 	</tr>
 	<tr>
