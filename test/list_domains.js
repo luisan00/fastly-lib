@@ -34,7 +34,8 @@ tap.test('if no errors', function(t) {
  * will return an object.
  */
 tap.test('if errors', function(t) {
-    flib.list_domains('sorry for the inconveniences, im testing a new library :(')
+    var flib = new fastly('wrong_key');
+    flib.list_domains()
         .then((res) => {
             t.fail(res);
             t.end();
