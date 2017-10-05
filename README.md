@@ -55,18 +55,20 @@ fastly.purge('http://example.url/path/to/resource')
 <table>
 	<tr>
 		<th>Method</th>
+		<th>Description</th>
 		<th>Params</th>
 		<th>Docs</th>
 	</tr>
 	<tr>
 		<td>.list_domains()</td>
+		<td>List of all domains associated with a Fastly account</td>
 		<td>None</td>
 		<td><a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">link</a></td>
 	</tr>
 </table>
 
 #### Fastly API
-***fastly-lib*** also provides access to Fastly API functions through the following methods.
+**fastly-lib** also provides access to Fastly API functions through the following methods.
 <table>
 	<tr>
 		<th>Method</th>
