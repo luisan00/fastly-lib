@@ -34,7 +34,7 @@ tap.test('if no errors', function(t) {
  * will return an object.
  */
 tap.test('if errors', function(t) {
-    flib.content('sorry for the inconveniences, im testing a new library :(')
+    flib.list_domains('sorry for the inconveniences, im testing a new library :(')
         .then((res) => {
             t.fail(res);
             t.end();
