@@ -7,7 +7,7 @@ Dependencies-free client to interface with the Fastly API.
 [![Build Status](https://travis-ci.org/luisan00/fastly-lib.svg?branch=master)](https://travis-ci.org/luisan00/fastly-lib)
 
 ### Requirements
-Node.js >= 6.x.x
+Node.js >= 5.x.x
 
 ### Installing
 The simplest method is to use npm in your source code folder
