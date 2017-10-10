@@ -16,7 +16,7 @@ npm install fastly-lib
 ```
 ### Usage
 
-Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a>
+Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a> and our <a href="WiKi">WiKi</a> for a detailed description of each method 
 
 ```js
 // constructor
@@ -42,7 +42,6 @@ fastly.purge('http://example.url/path/to/resource')
 	// .then() and .catch() returns the result or error of the call
 	...
 ```
-
 
 ### API
 
