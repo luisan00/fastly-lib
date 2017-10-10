@@ -14,10 +14,6 @@ The simplest method is to use npm in your source code folder
 ```bash
 npm install fastly-lib
 ```
-Or if you want to add it in your package.json, type:
-```bash
-npm install fastly-lib --save
-```
 ### Usage
 
 Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a>
