@@ -93,8 +93,8 @@ fastly.purge('http://example.url/path/to/resource')
 
 <table>
 	<tr>
-		<td>.purge(URL)</td>
-		<td>URL: String</td>
+		<td>.purge(url)</td>
+		<td>url: String</td>
 		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[?]</a>.</td>
 	</tr>
 	<tr>
@@ -119,13 +119,16 @@ fastly.purge('http://example.url/path/to/resource')
 		<td><a href="https://docs.fastly.com/api/purge#purge_db35b293f8a724717fcf25628d713583">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.softpurge(URL)</td>
-		<td>URL: String</td>
+		<td>.softpurge(url)</td>
+		<td>url: String</td>
 		<td><a href="https://docs.fastly.com/api/purge#soft_purge_0c4f56f3d68e9bed44fb8b638b78ea36">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.softpurge_by_key(SERVICE_ID, KEY)</td>
-		<td>SERVICE_ID: String, KEY: String</td>
+		<td>.softpurge_by_key(service_id, key)</td>
+		<td>
+			service_id: String</br>
+			key: String
+		</td>
 		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">[?]</a></td>
 	</tr>
 </table>
@@ -134,8 +137,8 @@ fastly.purge('http://example.url/path/to/resource')
 
 <table>
 	<tr>
-		<td>.content(URL)</td>
-		<td>URL: String</td>
+		<td>.content(url)</td>
+		<td>url: String</td>
 		<td>List of URLs cached on each edge server.<a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">[?]</a></td>
 	</tr>
 	<tr>
