@@ -66,6 +66,14 @@ fastly.purge('http://example.url/path/to/resource')
 **fastly-lib** also provides access to Fastly API functions through the following methods.
 <table>
 	<tr>
+		<td colspan="3">Purging https://docs.fastly.com/api/purge#purge</td>
+	</tr>
+	<tr>
+		<td></td
+	</tr>
+</table>
+<table>
+	<tr>
 		<th>Method</th>
 		<th>Params</th>
 		<th>Docs</th>
