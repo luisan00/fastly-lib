@@ -61,6 +61,8 @@ fastly.purge('http://example.url/path/to/resource')
 #### Fastly API
 **fastly-lib** also provides access to Fastly API functions through the following methods.
 
+**Configuration**
+
 <table>
 	<tr>
 		<th>Method</th>
@@ -68,8 +70,11 @@ fastly.purge('http://example.url/path/to/resource')
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>.domains(SERVICE_ID, VERSION)</td>
-		<td>SERVICE_ID: String<br>VERSION: Number</td>
+		<td>.domains(service_id, version)</td>
+		<td>
+			service_id: String<br>
+			version: Number
+		</td>
 		<td><a href="">[?]</a></td>
 	</tr>
 	<tr>
@@ -78,8 +83,8 @@ fastly.purge('http://example.url/path/to/resource')
 		<td><a href="">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.versions(SERVICE_ID)</td>
-		<td>SERVICE_ID: String</td>
+		<td>.versions(service_id)</td>
+		<td>service_id: String</td>
 		<td><a href="https://docs.fastly.com/api/config#version_dfde9093f4eb0aa2497bbfd1d9415987">[?]</a></td>
 	</tr>
 </table>
@@ -90,32 +95,38 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<td>.purge(URL)</td>
 		<td>URL: String</td>
-		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[more]</a>.</td>
+		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[?]</a>.</td>
 	</tr>
 	<tr>
-		<td>.purge_all(SERVICE_ID)</td>
-		<td>SERVICE_ID: String</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_bee5ed1a0cfd541e8b9f970a44718546">link</a></td>
+		<td>.purge_all(service_id)</td>
+		<td>service_id: String</td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_bee5ed1a0cfd541e8b9f970a44718546">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.purge_by_key(SERVICE_ID, KEY)</td>
-		<td>SERVICE_ID: String, KEY: String</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_d8b8e8be84c350dd92492453a3df3230">link</a></td>
+		<td>.purge_by_key(service_id, key)</td>
+		<td>
+			service_id: String<br>
+			key: String
+		</td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_d8b8e8be84c350dd92492453a3df3230">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.purge_multiple(SERVICE_ID, KEYS)</td>
-		<td>SERVICE_ID: String, KEYS: Array of Strings</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_db35b293f8a724717fcf25628d713583">link</a></td>
+		<td>.purge_multiple(service_id, keys)</td>
+		<td>
+			service_id: String</br>
+			keys: Array of Strings
+		</td>
+		<td><a href="https://docs.fastly.com/api/purge#purge_db35b293f8a724717fcf25628d713583">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.softpurge(URL)</td>
 		<td>URL: String</td>
-		<td><a href="https://docs.fastly.com/api/purge#soft_purge_0c4f56f3d68e9bed44fb8b638b78ea36">link</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#soft_purge_0c4f56f3d68e9bed44fb8b638b78ea36">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.softpurge_by_key(SERVICE_ID, KEY)</td>
 		<td>SERVICE_ID: String, KEY: String</td>
-		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">link</a></td>
+		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">[?]</a></td>
 	</tr>
 </table>
 
