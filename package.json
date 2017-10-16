@@ -4,7 +4,8 @@
   "description": "API fastly client for Node.js",
   "main": "lib/fastly.js",
   "scripts": {
-    "test": "tap test/*.js --coverage"
+    "test": "tap test/*.js --coverage",
+    "posttest": "tap --coverage-report=lcov && codecov"
   },
   "repository": {
     "type": "git",
