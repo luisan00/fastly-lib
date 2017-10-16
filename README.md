@@ -125,12 +125,12 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<td>.content(URL)</td>
 		<td>URL: String</td>
-		<td><a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">[?]</a></td>
+		<td>List of URLs cached on each edge server.<a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.datacenters()</td>
 		<td>None</td>
-		<td><a href="https://docs.fastly.com/api/tools#datacenter_1c8d3b9dd035e301155b44eae05e0554">[?]</a></td>
+		<td>List of Fastly datacenters<a href="https://docs.fastly.com/api/tools#datacenter_1c8d3b9dd035e301155b44eae05e0554">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.docs()</td>
