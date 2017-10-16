@@ -89,8 +89,8 @@ fastly.purge('http://example.url/path/to/resource')
 <table>
 	<tr>
 		<td>.purge(URL)</td>
-		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[more]</a>.</td>
 		<td>URL: String</td>
+		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[more]</a>.</td>
 	</tr>
 	<tr>
 		<td>.purge_all(service_id)</td>
@@ -117,12 +117,14 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>service_id: String, key: String</td>
 		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">link</a></td>
 	</tr>
+</table>
+
+**Utilities**
+
+<table>
 	<tr>
-		<th colspan="3">Utilities</th>
-	</tr>
-	<tr>
-		<td>.content(url)</td>
-		<td>url: String</td>
+		<td>.content(URL)</td>
+		<td>URL: String</td>
 		<td><a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">link</a></td>
 	</tr>
 	<tr>
@@ -137,8 +139,8 @@ fastly.purge('http://example.url/path/to/resource')
 	</tr>
 	<tr>
 		<td>.public_ip_list()</td>
-		<td>Return the list of public IP addresses for the Fastly network<a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[more].</a></td>
 		<td>None</td>
+		<td>Return the list of public IP addresses for the Fastly network<a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[more].</a></td>
 	</tr>
 
 </table>
