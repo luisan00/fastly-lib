@@ -5,7 +5,7 @@
   "main": "lib/fastly.js",
   "scripts": {
     "test": "tap test/*.js --coverage",
-    "posttest": "tap --coverage-report=lcov"
+    "posttest": "tap --coverage-report=lcov && codecov"
   },
   "repository": {
     "type": "git",
