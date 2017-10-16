@@ -68,19 +68,19 @@ fastly.purge('http://example.url/path/to/resource')
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>.domains(service_id, version)</td>
-		<td>service_id: String, version: Number</td>
-		<td><a href="">link</a></td>
+		<td>.domains(SERVICE_ID, VERSION)</td>
+		<td>SERVICE_ID: String, VERSION: Number</td>
+		<td><a href="">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.service()</td>
 		<td>None</td>
-		<td><a href="">link</a></td>
+		<td><a href="">[?]</a></td>
 	</tr>
 	<tr>
-		<td>.versions(service_id)</td>
-		<td>service_id: String</td>
-		<td><a href="https://docs.fastly.com/api/config#version_dfde9093f4eb0aa2497bbfd1d9415987">link</a></td>
+		<td>.versions(SERVICE_ID)</td>
+		<td>SERVICE_ID: String</td>
+		<td><a href="https://docs.fastly.com/api/config#version_dfde9093f4eb0aa2497bbfd1d9415987">[?]</a></td>
 	</tr>
 </table>
 
