@@ -125,22 +125,22 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<td>.content(URL)</td>
 		<td>URL: String</td>
-		<td><a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">link</a></td>
+		<td><a href="https://docs.fastly.com/api/tools#content_4d2d4548b29c7661e17ebe7098872d6d">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.datacenters()</td>
 		<td>None</td>
-		<td><a href="https://docs.fastly.com/api/tools#datacenter_1c8d3b9dd035e301155b44eae05e0554">link</a></td>
+		<td><a href="https://docs.fastly.com/api/tools#datacenter_1c8d3b9dd035e301155b44eae05e0554">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.docs()</td>
 		<td>None</td>
-		<td><a href="https://docs.fastly.com/api/tools#docs_79aecbf210c8163e20e2222a5c646453">link</a></td>
+		<td>Gets all the Fastly API documentation. <a href="https://docs.fastly.com/api/tools#docs_79aecbf210c8163e20e2222a5c646453">[?]</a></td>
 	</tr>
 	<tr>
 		<td>.public_ip_list()</td>
 		<td>None</td>
-		<td>Return the list of public IP addresses for the Fastly network<a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[more].</a></td>
+		<td>Return the list of public IP addresses for the Fastly network. <a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[?]</a></td>
 	</tr>
 
 </table>
