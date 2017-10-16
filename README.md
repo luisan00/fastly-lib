@@ -44,18 +44,17 @@ fastly.purge('http://example.url/path/to/resource')
 ```
 
 ### API
-
 #### Extras
 <table>
 	<tr>
 		<th>Method</th>
-		<th>Description</th>
 		<th>Params</th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>.list_domains()</td>
-		<td>List of all domains associated with a Fastly account.<a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">[more]</a></td>
 		<td>None</td>
+		<td>List of all domains associated with a Fastly account <a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">[more]</a>.</td>
 	</tr>
 </table>
 
@@ -66,7 +65,7 @@ fastly.purge('http://example.url/path/to/resource')
 	<tr>
 		<th>Method</th>
 		<th>Params</th>
-		<th>Docs</th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>.domains(service_id, version)</td>
@@ -136,8 +135,8 @@ fastly.purge('http://example.url/path/to/resource')
 	</tr>
 	<tr>
 		<td>.public_ip_list()</td>
+		<td>Return the list of public IP addresses for the Fastly network<a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[more].</a></td>
 		<td>None</td>
-		<td><a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">link</a></td>
 	</tr>
 
 </table>
