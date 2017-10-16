@@ -87,8 +87,9 @@ fastly.purge('http://example.url/path/to/resource')
 	</tr>
 	<tr>
 		<td>.purge(url)</td>
+		<td>Purge an individual URL <a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">[more]</a>.</td>
 		<td>url: String</td>
-		<td><a href="https://docs.fastly.com/api/purge#purge_3aa1d66ee81dbfed0b03deed0fa16a9a">link</a></td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>.purge_all(service_id)</td>
