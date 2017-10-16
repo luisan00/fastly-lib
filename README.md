@@ -69,7 +69,7 @@ fastly.purge('http://example.url/path/to/resource')
 	</tr>
 	<tr>
 		<td>.domains(SERVICE_ID, VERSION)</td>
-		<td>SERVICE_ID: String, VERSION: Number</td>
+		<td>SERVICE_ID: String<br>VERSION: Number</td>
 		<td><a href="">[?]</a></td>
 	</tr>
 	<tr>
