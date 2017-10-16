@@ -64,14 +64,7 @@ fastly.purge('http://example.url/path/to/resource')
 
 #### Fastly API
 **fastly-lib** also provides access to Fastly API functions through the following methods.
-<table>
-	<tr>
-		<td colspan="3">Purging https://docs.fastly.com/api/purge#purge</td>
-	</tr>
-	<tr>
-		<td></td
-	</tr>
-</table>
+
 <table>
 	<tr>
 		<th>Method</th>
@@ -92,6 +85,9 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>.versions(service_id)</td>
 		<td>service_id: String</td>
 		<td><a href="https://docs.fastly.com/api/config#version_dfde9093f4eb0aa2497bbfd1d9415987">link</a></td>
+	</tr>
+	<tr>
+		<th colspan="3">Purging</th>
 	</tr>
 	<tr>
 		<td>.purge(url)</td>
@@ -122,6 +118,9 @@ fastly.purge('http://example.url/path/to/resource')
 		<td>.softpurge_by_key(service_id, key)</td>
 		<td>service_id: String, key: String</td>
 		<td><a href="https://docs.fastly.com/api/purge#soft_purge_2e4d29085640127739f8467f27a5b549">link</a></td>
+	</tr>
+	<tr>
+		<th colspan="3">Utilities</th>
 	</tr>
 	<tr>
 		<td>.content(url)</td>
