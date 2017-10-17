@@ -29,12 +29,21 @@ tap.test('request GET -> catch()', (t) => {
     flib.request.send()
         .then((res) => {
             t.fail(res);
-            t.end()
+            t.end();
         })
         .catch((err) => {
             t.type(err, 'object', '.catch(object)');
             t.end();
         })
 });
-
-
+tap.test('request DELETE -> then', (t) => {
+  flib.request.delete('/')
+    .then((res)=>{
+        t.type(res, 'object', '.then(object)');
+      t.end();
+    })
+    .catch((err)=>{
+      t.fail(res);
+      t.end();
+    })
+})
