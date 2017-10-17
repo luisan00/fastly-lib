@@ -36,6 +36,20 @@ tap.test('request GET -> catch()', (t) => {
             t.end();
         })
 });
+
+tap.test('request.purge -> return object', (t) => {
+    flib.request.options.path = '/' + content_url;
+    flib.request.purge()
+        .then((res) => {
+            t.type(res, 'object', '.then(object)');
+            t.end();
+        })
+        .catch((err) => {
+            t.fail(res);
+            t.end();
+        })
+})
+
 tap.test('request.delete -> return string as error', (t) => {
     flib.request.options.path = '/'
     flib.request.delete()
