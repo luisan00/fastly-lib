@@ -36,14 +36,14 @@ tap.test('request GET -> catch()', (t) => {
             t.end();
         })
 });
-tap.test('request DELETE -> then', (t) => {
+tap.test('request.delete -> return string as error', (t) => {
   flib.request.delete('/')
-    .then((res)=>{
-        t.type(res, 'object', '.then(object)');
-      t.end();
-    })
-    .catch((err)=>{
-      t.fail(res);
-      t.end();
-    })
+      .then((res)=>{
+          t.type(res, 'string', '.then(string)');
+          t.end();
+      })
+        .catch((err)=>{
+          t.fail(res);
+          t.end();
+      })
 })
