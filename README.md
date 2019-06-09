@@ -170,4 +170,4 @@ fastly.datacenters()
 
 ### License
 
-fastly-lib is licensed under the <a href="LICENSE">MIT License</a> © 2017-2018 luisan00
+fastly-lib is licensed under the <a href="LICENSE">MIT License</a> © 2017-2019 luisan00
