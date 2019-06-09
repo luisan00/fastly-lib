@@ -19,29 +19,35 @@ npm install fastly-lib
 Firstly and before to use the client, i strongly recommend reading the documentation about the <a target="_blank" href="https://docs.fastly.com/api/">Fastly API</a> and our <a href="https://github.com/luisan00/fastly-lib/wiki">WiKi</a> for a detailed description of each library method.
 
 ```js
-// constructor
 const fastlyLib = require('fastly-lib');
-// create an instance.
 const fastly = new fastlyLib('your_api_key');
+
+fastly.get('/public-ip-list')
+    .then((res) => {
+        // do something with the response.
+    })
+    .catch((err) => {
+        // something in case of error.
+    })
+ 
+// Or use the method that corresponds to each action
+fastly.post(...)
+fastly.purge(...)
+fastly.delete(...)
+```
+
+or using helper methods
+```js
 // get a list of Fastly datacenters.
 fastly.datacenters()
   .then((res) => {
     // do something with the response.
-    console.log(res);
   })
   .catch((err) => {
     // or something in case of errors.
-    console.log(err);
   })
 ```
 
-keeping in mind the above structure, the only change between methods is the parameter or parameters, for example:
-
-```js
-fastly.purge('http://example.url/path/to/resource')
-	// .then() and .catch() returns the result or error of the call
-	...
-```
 
 ### API
 #### Extras
