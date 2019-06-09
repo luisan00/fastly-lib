@@ -13,7 +13,7 @@ tap.test('.purge()', function(t) {
 tap.test('.purge.then()', function(t) {
 	flib.purge(content_url)
 		.then((res)=>{
-			t.type(res, 'string', 'return string');
+			t.type(res, 'object', 'return object');
 			t.end();
 		})
 		.catch((err)=>{
