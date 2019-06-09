@@ -5,19 +5,7 @@ const content_url =  process.env.CONTENT_URL || '';
 
 var flib = new fastly(fastly_api_key);
 
-// --> .softpurge()
 tap.test('.softpurge()', function(t) {
-	t.type(flib.softpurge, 'function', 'return function')
+	t.type(flib.softpurge, 'function', 'return function');
 	t.end();
-});
-tap.test('.softpurge.then()', function(t) {
-	flib.softpurge(content_url)
-		.then((res)=>{
-			t.type(res, 'object', 'return object');
-			t.end();
-		})
-		.catch((err)=>{
-			t.fail(err);
-			t.end();
-		})
 });
