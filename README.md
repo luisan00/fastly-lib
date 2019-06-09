@@ -36,7 +36,7 @@ fastly.purge(...)
 fastly.delete(...)
 ```
 
-or using helper methods
+Or using helpers
 ```js
 // get a list of Fastly datacenters.
 fastly.datacenters()
@@ -49,23 +49,8 @@ fastly.datacenters()
 ```
 
 
-### API
-#### Extras
-<table>
-	<tr>
-		<th>Method</th>
-		<th>Params</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>.list_domains()</td>
-		<td>None</td>
-		<td>List of all domains associated with a Fastly account <a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">[?]</a>.</td>
-	</tr>
-</table>
-
-#### Fastly API
-**fastly-lib** also provides access to Fastly API functions through the following methods.
+### Helpers
+**fastly-lib** also provides access to Fastly API functions through the following few methods
 
 **Configuration**
 
@@ -163,6 +148,20 @@ fastly.datacenters()
 		<td>Return the list of public IP addresses for the Fastly network. <a href="https://docs.fastly.com/api/tools#public_ip_list_ef2e9900a1c9522b58f5abed92ec785e">[?]</a></td>
 	</tr>
 
+</table>
+
+**Extra**
+<table>
+	<tr>
+		<th>Method</th>
+		<th>Params</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>.list_domains()</td>
+		<td>None</td>
+		<td>List of all domains associated with a Fastly account <a href="https://github.com/luisan00/fastly-lib/wiki/Extras#list_domains">[?]</a>.</td>
+	</tr>
 </table>
 
 ### Contributing
