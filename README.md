@@ -7,7 +7,7 @@ Dependencies-free client to interface with the Fastly API.
 [![Build Status](https://travis-ci.org/luisan00/fastly-lib.svg?branch=master)](https://travis-ci.org/luisan00/fastly-lib)
 [![Coverage Status](https://coveralls.io/repos/github/luisan00/fastly-lib/badge.svg?branch=master)](https://coveralls.io/github/luisan00/fastly-lib?branch=master)
 ### Requirements
-Node.js >= 4.8.4
+Node.js
 
 ### Installing
 The simplest method is to use npm in your source code folder
