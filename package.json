@@ -20,8 +20,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "codecov": "^3.6.5",
-    "tap": "^10.7.2"
+    "codecov": "^3.8.3",
+    "tap": "^15.0.9"
   },
   "author": "luisan00",
   "license": "MIT"
