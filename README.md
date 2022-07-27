@@ -3,7 +3,12 @@ Dependencies-free client to interface with the Fastly API.
 
 [![NPM](https://nodei.co/npm/fastly-lib.png)](https://nodei.co/npm/fastly-lib/)
 
+<div>
+
 [![codecov](https://codecov.io/gh/luisan00/fastly-lib/branch/master/graph/badge.svg?token=S5tjNuzXaS)](https://codecov.io/gh/luisan00/fastly-lib)
+[![](https://img.shields.io/website?url=https%3A%2F%2Fluisan00.github.io%2Ffastly-lib%2F)](https://luisan00.github.io/fastly-lib/)
+
+</div>
 
 ### Requirements
 Node.js version 16 or greater
