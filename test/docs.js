@@ -4,11 +4,12 @@ const fastly_api_key =  process.env.FASTLY_API_KEY || '';
 
 var flib = new fastly(fastly_api_key);
 
-// --> .docs()
+// method: should be function
 tap.test('.docs()', function(t) {
 	t.type(flib.docs, 'function', 'return function')
 	t.end();
 });
+// then: should return object
 tap.test('.docs.then()', function(t) {
 	flib.docs()
 		.then((res)=>{

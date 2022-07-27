@@ -5,18 +5,13 @@ const content_url = process.env.CONTENT_URL || '';
 
 var flib = new fastly(fastly_api_key);
 
-/**
- * fastly.content() is a function
- */
+// method: should be function
 tap.test('.content()', function(t) {
     t.type(flib.content, 'function', 'is function')
     t.end();
 });
 
-/**
- * fastly.content() if no errors
- * will return an object.
- */
+// then: should return object
 tap.test('if no errors', function(t) {
     flib.content(content_url)
         .then((res) => {
@@ -29,10 +24,7 @@ tap.test('if no errors', function(t) {
         })
 });
 
-/**
- * fastly.content() in case of errors
- * will return an object.
- */
+// then: should return
 tap.test('if errors', function(t) {
     flib.content('sorry for the inconveniences, im testing a new library :(')
         .then((res) => {
