@@ -6,7 +6,7 @@ Dependencies-free client to interface with the Fastly API.
 [![codecov](https://codecov.io/gh/luisan00/fastly-lib/branch/master/graph/badge.svg?token=S5tjNuzXaS)](https://codecov.io/gh/luisan00/fastly-lib)
 
 ### Requirements
-Node.js
+Node.js version 16 or greater
 
 ### Installing
 The simplest method is to use npm in your source code folder
