@@ -4,9 +4,17 @@
   "description": "API fastly client for Node.js",
   "main": "lib/fastly.js",
   "scripts": {
-    "test": "tap test/*.js --coverage",
-    "posttest": "tap --coverage-report=lcov && codecov"
+    "test": "tap test/*.js",
+    "posttest": "tap --coverage-report=text-lcov | codecov --pipe"
   },
+  "tap":{
+    "check-coverage": false,
+    "branches": 50,
+    "functions": 50,
+    "lines": 50,
+    "statements": 50
+  },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/luisan00/fastly-lib.git"
