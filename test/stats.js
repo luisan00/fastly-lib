@@ -4,8 +4,9 @@ const fastly_api_key = process.env.FASTLY_API_KEY || '';
 
 var flib = new fastly(fastly_api_key);
 
-// --> .stats() wo.params
-tap.test('.stats.then()', function(t) {
+// method Wno-params: should return function
+// then: should return object
+tap.test('.stats.then()', function (t) {
     t.type(flib.stats, 'function', 'return function')
     flib.stats()
         .then((res) => {
@@ -18,14 +19,15 @@ tap.test('.stats.then()', function(t) {
         })
 });
 
-// --> .stats() w.params
-tap.test('.stats()', function(t) {
+// method W-params: should return function
+// then: should return object
+tap.test('.stats()', function (t) {
     t.type(flib.stats, 'function', 'return function')
     flib.stats({
-            from: 'Yesterday',
-            to: 'Today',
-            by: 'Hour'
-        })
+        from: 'Yesterday',
+        to: 'Today',
+        by: 'Hour'
+    })
         .then((res) => {
             t.type(res, 'object', 'return object');
             t.end();
