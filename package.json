@@ -16,14 +16,13 @@
   },
   "keywords": [
     "fastly",
-    "api",
-    "dependencies-free",
     "cache",
-    "client"
+    "api",
+    "cdn"
   ],
   "devDependencies": {
     "codecov": "^3.8.3",
-    "tap": "^15.0.9"
+    "tap": "^16.3.0"
   },
   "author": "luisan00",
   "license": "MIT"
